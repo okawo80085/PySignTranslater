@@ -21,17 +21,18 @@ It requires:
 
 ## to use it
 
-to use it on a video you first need to "marck" the video file, you can do that by using **marker.py** with the folowing arguments
+to use it on a video you first need to "marck" the video file, you can do that by using **marker.py** with the following arguments
 ```
 python3 marker.py -mm 1 -mp path/to/your/marcker/image.jpg -vp path/to/your/video/file.mkv -ol path/to/your/video/file.log
 ```
 
 marcker image has to be the same resolution as your video file
 
-you can also get more info on arguments for **marker.py** by
+you can also get more info on arguments for **marker.py** with
 ```
 python3 marker.py -h
 ```
+
 
 then to translate the video
 

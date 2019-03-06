@@ -155,12 +155,27 @@ pre = lewd2.predict(X)
 
 tranlsated = lstm9ToWords(pre)
 
-file = open('tranlsated.txt', 'wt')
+file = open('tranlsated_raw.txt', 'wt')
+file2 = open('tranlsated.txt', 'wt')
 
 for i in tranlsated:
 	file.write('{0}\n'.format(i))
 
 file.close()
+
+normed_tran = []
+
+old_i = None
+
+for i in tranlsated:
+	if i[0] != old_i and i[0] != 'notSign':
+		normed_tran.append(i[0])
+		old_i = i[0]
+
+for i in normed_tran:
+	file2.write('{0}\n'.format(i))
+
+file2.close()
 
 ###############end########################
 print ('(σ´-ω-`)σ')

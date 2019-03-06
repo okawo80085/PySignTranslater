@@ -1,4 +1,4 @@
-# PySignTranslater
+# PySignTranslatEr
 it's intended to be used for sign language translation, but it's undertrained
 
 ### at the time of making this document translator "knew" only 8 words(no, why not, yes, taxi, no thanks, night, niger(country), good day) and unknown word/not a word mark(not sign)

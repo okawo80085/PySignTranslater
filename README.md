@@ -26,7 +26,7 @@ to use it on a video you first need to "mark" the video file, you can do that by
 python3 marker.py -mm 1 -mp path/to/your/marker/image.jpg -vp path/to/your/video/file.mkv -ol path/to/your/video/file.log
 ```
 
-marcker image has to be the same resolution as your video file
+marker can be any image that has to be the same resolution as your video file
 
 you can also get more info on arguments for **marker.py** with
 ```

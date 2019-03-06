@@ -35,7 +35,7 @@ after thats done run **combo2.py**
 ```
 python3 combo2.py
 ```
-the result will be saved in cronological order to **tranlsated.txt** 
+the result will be saved in cronological order to **tranlsated.txt**, raw output from the neural network is saved in cronological order to **translated_raw.txt**
 
 Video formats supported(tested):
 * ```mp4```

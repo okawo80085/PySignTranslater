@@ -21,22 +21,7 @@ It requires:
 
 ## to use it
 
-to use it on a video you first need to "mark" the video file, you can do that by using **marker.py** with the following arguments
-```
-python3 marker.py -mm 1 -mp path/to/your/marker/image.jpg -vp path/to/your/video/file.mkv -ol path/to/your/video/file.log
-```
-
-marker(can be any image) that has to be the same resolution as your video file
-
-you can also get more info on arguments for **marker.py** with
-```
-python3 marker.py -h
-```
-
-
-then to translate the video
-
-modify *line 392* in **combo.py**
+modify *line 421* in **combo.py**
 ```python
 name, form = get_format('path/to/your/video/file.mp4')
 ```

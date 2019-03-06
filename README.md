@@ -82,6 +82,8 @@ python3 CutNN_train.py
 #### to train the *translator*
 put your data, with labels in the file name, in temp_train folder in the same directory with all of your scripts
 
+there is no way to add more words atm(again design of this model is not optimal. output layer is curently configured as 1 neuron per label)
+
 ***DON'T MIX LABELS***
 
 List of labels:

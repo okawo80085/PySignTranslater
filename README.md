@@ -56,7 +56,7 @@ trainning is split into two, *cutter* trainning and *translator* trainning
 #### to train the *cutter*(NOT RECOMMENDED)
 you need to put your data, with labels in .log files that have the same name as your video files, in temp2_train folder in the same directory with all of your scripts
 
-to generate .log files you would have to use **marker.py** BUT it would need more cunfiguration and some video editing on your side
+to generate .log files you would have to use **marker.py** BUT it would need cunfiguration and some video editing on your side
 
 i will make a detailed doc on how to do that one day
 

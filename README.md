@@ -21,9 +21,9 @@ It requires:
 
 ## to use it
 
-to use it on a video you first need to "marck" the video file, you can do that by using **marker.py** with the following arguments
+to use it on a video you first need to "mark" the video file, you can do that by using **marker.py** with the following arguments
 ```
-python3 marker.py -mm 1 -mp path/to/your/marcker/image.jpg -vp path/to/your/video/file.mkv -ol path/to/your/video/file.log
+python3 marker.py -mm 1 -mp path/to/your/marker/image.jpg -vp path/to/your/video/file.mkv -ol path/to/your/video/file.log
 ```
 
 marcker image has to be the same resolution as your video file

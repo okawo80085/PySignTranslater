@@ -333,6 +333,34 @@ def clean_temp(path):
 
 	return True
 
+def fake_mark_vod(path, form):
+	log = open('{0}.{1}'.format(path, 'log'), 'wt')
+
+	print ('{0}.{1}'.format(path, form))
+	print ('{0}.{1}'.format(path, 'log'))
+
+	cum = cv2.VideoCapture('{0}.{1}'.format(path, form))
+
+	fn = 0
+
+	while 1:
+		ret, frame = cum.read()
+
+		if ret != True:
+			log.write('0')
+			log.close()
+			break
+
+		if fn > 0:
+			log.write('0\n')
+
+		fn += 1
+
+	cum.release()
+
+	pass
+
+
 ###########cleanning temp##############
 
 print ('cleanning temp')
@@ -351,6 +379,7 @@ if er != True:
 
 else:
 	print ('temp cleanned')
+
 
 #############CutNN######################
 
@@ -389,7 +418,16 @@ print ('(☍﹏⁰)')
 '''
 ##########Marcking for cut################
 
-name, form = get_format('data/0.mp4')
+name, form = get_format('paht/to/your/data.mp4')
+
+try:
+	print ('marking video file')
+	fake_mark_vod(name, form)
+	print ('marked!')
+
+except Exception as e:
+	print ('can\'t mark the video file')
+	exit()
 
 Xn, Yn = paths_to_tensors([['{0}.{1}'.format(name, form), '{0}.log'.format(name)]])
 

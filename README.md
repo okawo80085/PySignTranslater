@@ -54,7 +54,7 @@ their design is not otimal and both are undertrained, but it works as a proof of
 trainning is split into two, *cutter* trainning and *translator* trainning
 
 #### to train the *cutter*(NOT RECOMMENDED)
-you need to put your data, with labels in .log files that have the same name as your video files, in temp2_train folder in the same directory with all of your scripts
+you need to put your data, with labels in .log files that have the same name as your video files, in **temp2_train** folder in the same directory with all of your scripts
 
 to generate .log files you would have to use **marker.py** BUT it would need cunfiguration and some video editing on your side
 
@@ -67,7 +67,7 @@ python3 CutNN_train.py
 
 
 #### to train the *translator*
-put your data, with labels in the file name, in temp_train folder in the same directory with all of your scripts
+put your data, with labels in the file name, in **temp_train** folder in the same directory with all of your scripts
 
 there is no way to add more words atm(again design of this model is not optimal. output layer is curently configured as 1 neuron per label)
 

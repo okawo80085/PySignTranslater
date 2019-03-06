@@ -21,7 +21,7 @@ It requires:
 
 ## to use it
 
-**UPDATE**: you don't need to "mark" the video anymore, marking procces was automated and it been added to **combo.py**
+**UPDATE**: you don't need to "mark" the video anymore, "marking" procces was automated and it been added to **combo.py**
 
 to translate a video modify *line 421* in **combo.py**
 ```python

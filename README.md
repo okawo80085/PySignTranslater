@@ -23,7 +23,7 @@ It requires:
 
 **UPDATE**: you don't need to "mark" the video anymore, "marking" procces was automated and it been added to **combo.py**
 
-to translate a video modify *line 421* in **combo.py**
+to translate a video modify *line 421* with a path to your video file in **combo.py**
 ```python
 name, form = get_format('path/to/your/video/file.mp4')
 ```

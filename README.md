@@ -23,14 +23,11 @@ It requires:
 
 **UPDATE**: you don't need to "mark" the video anymore, "marking" procces has been automated and added to **combo.py**
 
-to translate from a video modify *line 421* with a path to your video file in **combo.py**
-```python
-name, form = get_format('path/to/your/video/file.mp4')
+to translate from a video ~~modify *line 421* with a path to your video file in **combo.py**~~, just run **combo.py** with argument ```-vp``` and a path to your video file
 ```
-then run **combo.py**
+python3 combo.py -vp path/to/your/video/file.mp4
 ```
-python3 combo.py
-```
+
 after thats done run **combo2.py**
 ```
 python3 combo2.py

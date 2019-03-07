@@ -1,12 +1,31 @@
+import argparse
+import os, shutil
+
+############parsing arguments#################
+
+parser = argparse.ArgumentParser(description='PySignTranslatEr, it\'s intended to be used for sign language translation, but it\'s undertrained, more details here https://github.com/okawo80085/PySignTranslater')
+
+required = parser.add_argument_group('required arguments')
+
+required.add_argument('-vp', '--videoPath', type=str, help='path to a video file to translate from', required=True)
+
+args = parser.parse_args()
+
+if not os.path.isfile(vars(args)['videoPath']):
+	print ('has to be a file')
+	exit()
+
+###########importing libs######################
 import numpy as np
 import cv2
 from PIL import Image
 import PIL
-import os, shutil
 import tflearn as tfl
 from tflearn.data_utils import to_categorical, pad_sequences
 import matplotlib.pyplot as plt
 import tensorflow as tf
+
+############functions###########################
 
 def imToAr(imm):
 
@@ -418,7 +437,7 @@ print ('(☍﹏⁰)')
 '''
 ##########Marcking for cut################
 
-name, form = get_format('paht/to/your/data.mp4')
+name, form = get_format(vars(args)['videoPath'])
 
 try:
 	print ('marking video file')

@@ -18,12 +18,24 @@ if not os.path.isfile(vars(args)['videoPath']):
 
 
 ################part 1####################
+try:
+	sub.run('python3 combo.py -vp {0}'.format(vars(args)['videoPath']), shell=True, check=True)
 
-sub.run('python3 combo.py -vp {0}'.format(vars(args)['videoPath']), shell=True)
+	##############################next stage##########################################
 
-################part 2####################
+	sub.run('python3 combo2.py', shell=True, check=True)
 
-sub.run('python3 combo2.py', shell=True)
+except Exception as e:
+	sub.run('python combo.py -vp {0}'.format(vars(args)['videoPath']), shell=True, check=True)
+
+	##############################next stage##########################################
+
+	sub.run('python combo2.py', shell=True, check=True)
+
+else:
+	print (e)
+	print ('do you even have other scripts in this folder?')
+	exit()
 
 ###############end########################
 

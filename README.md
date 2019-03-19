@@ -21,7 +21,7 @@ It requires:
 
 ## to use it
 
-**UPDATE**: almost everything is automated and added to **translate.py**
+**UPDATE**: almost everything was automated and added to **translate.py**
 
 to use it on a video file, just run **translate.py** with ```-vp``` argument and a path to your video file
 ```

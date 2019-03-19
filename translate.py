@@ -2,7 +2,7 @@ import argparse
 import os, shutil
 import subprocess as sub
 
-############parsing arguments#################
+############parsing arguments#############
 
 parser = argparse.ArgumentParser(description='PySignTranslatEr, it\'s intended to be used for sign language translation, but it\'s undertrained, more details here https://github.com/okawo80085/PySignTranslater')
 

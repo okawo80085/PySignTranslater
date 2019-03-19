@@ -155,8 +155,8 @@ pre = lewd2.predict(X)
 
 tranlsated = lstm9ToWords(pre)
 
-file = open('tranlsated_raw.txt', 'wt')
-file2 = open('tranlsated.txt', 'wt')
+file = open('translated_raw.txt', 'wt')
+file2 = open('translated.txt', 'wt')
 
 for i in tranlsated:
 	file.write('{0}\n'.format(i))

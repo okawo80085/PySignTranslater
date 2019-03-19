@@ -21,17 +21,13 @@ It requires:
 
 ## to use it
 
-**UPDATE**: you don't need to "mark" the video anymore, "marking" procces has been automated and added to **combo.py**
+**UPDATE**: almost everything is automated and added to **translate.py**
 
-to translate from a video ~~modify *line 421* with a path to your video file in **combo.py**~~, just run **combo.py** with argument ```-vp``` and a path to your video file
+to use it on a video file, just run **translate.py** with ```-vp``` argument and a path to your video file
 ```
-python3 combo.py -vp path/to/your/video/file.mp4
+python3 translate.py -vp path/to/your/video/file.mp4
 ```
 
-after thats done run **combo2.py**
-```
-python3 combo2.py
-```
 the result will be saved in cronological order to **tranlsated.txt**, raw output from the neural network is saved in cronological order to **translated_raw.txt**
 
 Video formats supported(tested):

@@ -300,29 +300,6 @@ def saveCut(arr, maxlen=-1):
 
 	pass
 
-def lstm9ToWords(pre):
-	undick = {'0':'no', '1':'whyNot', '2':'yes', '3':'taxi', '4':'noThx', '5':'night', '6':'niger', '7':'goodDay', '8':'notSign'}
-
-	out = []
-
-	oof = lambda a: a[0]
-
-	h = 0
-
-	while h < len(pre):
-		c = []
-		for i in zip(pre[h], range(len(pre[h]))):
-			c.append(i)
-
-		x = sorted(c, key=oof)[-1]
-
-		print (x[0], undick[str(x[1])])
-		out.append(x)
-
-		h += 1
-
-	return out
-
 def get_data_paths(folderPath):
 	gudFormats = ['mp4', 'MP4', 'mkv', 'MKV', 'avi', 'AVI']
 
@@ -416,25 +393,6 @@ lewd.load('CutNN', weights_only=True)
 
 print ('(☍﹏⁰)')
 
-'''
-################lstm9####################
-
-n_clss = 9
-
-nut = tfl.input_data([None, 80, 40000])
-nut = tfl.lstm(nut, 20, dynamic=True, dropout=0.5, activation='relu')
-nut = tfl.fully_connected(nut, n_clss, activation='softmax')
-nut = tfl.regression(nut, optimizer='adam', learning_rate=0.0002, loss='categorical_crossentropy')
-
-lewd2 = tfl.DNN(nut, tensorboard_verbose=0)
-
-tf.reset_default_graph()
-lewd2.load('lstm9_x2_res', weights_only=True, create_new_session=False)
-
-##########################################
-
-print ('(☍﹏⁰)')
-'''
 ##########Marcking for cut################
 
 name, form = get_format(vars(args)['videoPath'])
@@ -477,29 +435,7 @@ er = cut('{0}.{1}'.format(name, form), 'cut.log')
 if er != True:
 	print ('something went wrong during cutting')
 	exit()
-'''
-###########translating######################
-
-paths = sorted(get_data_paths('temp'))
-
-X = []
-
-for path in paths:
-	X.append(imToSeq(path, maxlen=80))
-
-print ('(`･ω･´)')
-
-pre = lewd2.predict(X)
-
-tranlsated = lstm9ToWords(pre)
-
-file = open('tranlsated.txt', 'wt')
-
-for i in tranlsated:
-	file.write('{0}\n'.format(i))
-
-file.close()
 
 ###############end########################
-'''
+
 print ('(σ´-ω-`)σ')

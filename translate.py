@@ -21,14 +21,14 @@ if not os.path.isfile(vars(args)['videoPath']):
 try:
 	sub.run('python3 combo.py -vp {0}'.format(vars(args)['videoPath']), shell=True, check=True)
 
-	##############################next stage##########################################
+	##############################next stage#######################################
 
 	sub.run('python3 combo2.py', shell=True, check=True)
 
 except Exception as e:
 	sub.run('python combo.py -vp {0}'.format(vars(args)['videoPath']), shell=True, check=True)
 
-	##############################next stage##########################################
+	##############################next stage#######################################
 
 	sub.run('python combo2.py', shell=True, check=True)
 

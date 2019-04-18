@@ -38,7 +38,7 @@ Video formats supported(tested):
 ## how it works
 
 it uses 2 neural networks, 1 for cutting the video into words and 1 for translating words.
-both neural networks are lstm's with one hide layer
+both neural networks are lstm's with one hiden layer
 
 their design is not otimal and both are undertrained, but it works as a proof of concept
 

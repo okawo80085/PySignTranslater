@@ -27,7 +27,7 @@ to use it on a video file, just run **translate.py** with ```-vp``` argument and
 ```
 python3 translate.py -vp path/to/your/video/file.mp4
 ```
-
+ 
 the result will be saved in cronological order to **tranlsated.txt**, raw output from the neural network will be saved in cronological order to **translated_raw.txt**
 
 Video formats supported(tested):

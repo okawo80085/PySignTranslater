@@ -84,4 +84,4 @@ python3 lstm9_train.py
 
 
 ### microsoft sign language translator
-[https://pdfs.semanticscholar.org/165a/1a7c529f51b91ae587496d41603e560d1fe9.pdf]
+[link to the paper](https://pdfs.semanticscholar.org/165a/1a7c529f51b91ae587496d41603e560d1fe9.pdf)
